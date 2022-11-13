@@ -2,31 +2,29 @@ const mongoose = require('mongoose');
 
 // hacemos el esquema del modelo de la base de datos
 
-const productosShema = mongoose.Schema({
+const proveedoresShema = mongoose.Schema({
 
-    nombre: {
+    empresa: {
         type: String,
         required: true
     },
-    categoria: {
+    representante: {
         type: String,
         required: true
     },
-    presentacion: {
+    telefono: {
         type: String,
         required: true
     },
-    cantidad: {
-        type: Number,
+    direccion: {
+        type: String,
         required: true
     },
-    precioV: {
-        type: Number,
+    producto: {
+        type: String,
         required: true
     }
 }, { versionKey: false });
 
-module.exports = mongoose.model('Producto', productosShema);
-
-
+module.exports = mongoose.model('Proveedor', proveedoresShema);
 
