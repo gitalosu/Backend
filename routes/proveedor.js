@@ -12,5 +12,4 @@ router.get('/:id', proveedorController.buscarProveedor);
 router.delete('/:id', proveedorController.eliminarProveedor);
 router.put('/:id', proveedorController.modificarProveedor);
 
-
 module.exports = router;

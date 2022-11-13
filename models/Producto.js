@@ -26,6 +26,7 @@ const productosShema = mongoose.Schema({
     }
 }, { versionKey: false });
 
+
 module.exports = mongoose.model('Producto', productosShema);
 
 
